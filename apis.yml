@@ -1,23 +1,76 @@
 aid: bestex-research
+
 name: BestEx Research
-description: 'BestEx Research is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+image: https://cdn.prod.website-files.com/63c8555b3d6b34a2c0620e39/63fe708e9a8ee16724148e17_home-featured-image.webp
+
+description: 'BestEx Research provides independent, research-driven execution algorithms, trading technology, and trade analytics built on rigorous market microstructure research across equities and futures. Serving asset managers, hedge funds, banks, and brokers, it offers end‑to‑end global execution platforms and AI‑powered market impact models to optimize execution costs and improve trading performance.'
+
 url: https://raw.githubusercontent.com/api-evangelist/bestex-research/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-28 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-27'
+
 modified: '2026-09-27'
+
 tags:
-- Company
-apis: []
+- Finance
+- Trading
+- Algorithms
+- Analytics
+- Research
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/bestex-research-hosts.yml
+- type: Vendors
+  url: vendors/bestex-research-vendors.yml
+- type: Newsroom
+  url: https://www.bestexresearch.com/news/introducing-bestex-research
+- type: Login
+  url: https://www.bestexresearch.com/sign-in
+- type: GitHubOrganization
+  url: https://github.com/bestexresearch
+- type: DomainSecurity
+  url: security/bestex-research-domain-security.yml
 - type: Website
-  url: https://www.nasdaqprivatemarket.com/
+  url: https://www.bestexresearch.com
+- type: PrivacyPolicy
+  url: https://www.bestexresearch.com/privacy-policy
+- type: TermsOfService
+  url: https://www.bestexresearch.com/terms-of-use
+- type: Support
+  url: https://www.bestexresearch.com/contact-us
+- type: GettingStarted
+  url: https://www.bestexresearch.com/schedule-a-demo
+
+apis: []
+
+x-coverage:
+  state: unreadable
+  reason: no-machine-readable-spec
+  detail: No OpenAPI, AsyncAPI, GraphQL, or other machine-readable contract found despite probing API host and docs.
+  evidence:
+    - url: https://api.bestexresearch.com/openapi.json
+      status: 0
+  checked: '2026-09-28'
+x-enrichment:
+  date: '2026-09-28'
+  status: enriched
+  artifacts_added: 6
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
