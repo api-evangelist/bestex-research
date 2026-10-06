@@ -19,7 +19,7 @@ specificationVersion: '0.20'
 
 created: '2026-09-27'
 
-modified: '2026-09-27'
+modified: '2026-10-06'
 
 tags:
 - Finance
@@ -35,6 +35,8 @@ maintainers:
   email: info@apis.io
 
 common:
+- url: https://www.bestexresearch.com/insight/articles
+  type: Blog
 - type: Hosts
   url: hosts/bestex-research-hosts.yml
 - type: Vendors
