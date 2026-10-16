@@ -1,0 +1,14 @@
+{
+  "repo": "bestex-research",
+  "feeds": [
+    {
+      "source": "https://www.bestexresearch.com/insight/articles",
+      "feed_url": "https://www.bestexresearch.com/insight/articles",
+      "title": "",
+      "saved": 0,
+      "method": "none"
+    }
+  ],
+  "post_count": 0,
+  "fetched": "2026-10-10T13:15:00Z"
+}
